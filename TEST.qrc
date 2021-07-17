@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/TEST">
+        <file>CAccount.h</file>
+        <file>CAdmin.h</file>
+        <file>CCard.h</file>
+        <file>CCardBook.h</file>
+        <file>CCardcase.h</file>
+        <file>COperationPrivilege.h</file>
+        <file>TEST.h</file>
+        <file>ui_GXNUSEP2101-DWGC-login-20210601-B-Zhy.h</file>
+        <file>ui_GXNUSEP2101-DWGC-mainWindows-20210601-1-LiaoZhJ.h</file>
+    </qresource>
+</RCC>

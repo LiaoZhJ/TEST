@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>801</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextBrowser" name="Hello">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>30</y>
+      <width>281</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9.07563pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt; font-weight:600; font-style:italic;&quot;&gt;欢迎使用名片册&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="CardcaseName">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>110</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>我的名片夹</string>
+    </property>
+   </widget>
+   <widget class="QTableView" name="Cardcase">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>140</y>
+      <width>641</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+   </widget>
+   <zorder>Cardcase</zorder>
+   <zorder>Hello</zorder>
+   <zorder>CardcaseName</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>801</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFind">
+    <property name="title">
+     <string>查找</string>
+    </property>
+    <addaction name="Find"/>
+    <addaction name="Replace"/>
+   </widget>
+   <widget class="QMenu" name="menuNew">
+    <property name="title">
+     <string>新增</string>
+    </property>
+    <addaction name="OneByImport"/>
+    <addaction name="BulkNew"/>
+    <addaction name="BulkImport"/>
+   </widget>
+   <widget class="QMenu" name="menuShare">
+    <property name="title">
+     <string>共享</string>
+    </property>
+    <addaction name="CardShare"/>
+    <addaction name="CardcaseShare"/>
+    <addaction name="Export"/>
+   </widget>
+   <widget class="QMenu" name="RecycleBin">
+    <property name="title">
+     <string>回收箱</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuPrint">
+    <property name="title">
+     <string>打印</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuPermissions">
+    <property name="title">
+     <string>权限</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuAccount">
+    <property name="title">
+     <string>账户</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuSetting">
+    <property name="title">
+     <string>设置</string>
+    </property>
+   </widget>
+   <addaction name="menuNew"/>
+   <addaction name="menuFind"/>
+   <addaction name="menuShare"/>
+   <addaction name="RecycleBin"/>
+   <addaction name="menuPrint"/>
+   <addaction name="menuPermissions"/>
+   <addaction name="menuAccount"/>
+   <addaction name="menuSetting"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="Find">
+   <property name="text">
+    <string>查找</string>
+   </property>
+  </action>
+  <action name="Replace">
+   <property name="text">
+    <string>替换</string>
+   </property>
+  </action>
+  <action name="OneByImport">
+   <property name="text">
+    <string>逐片新增</string>
+   </property>
+  </action>
+  <action name="BulkNew">
+   <property name="text">
+    <string>批量新增</string>
+   </property>
+  </action>
+  <action name="BulkImport">
+   <property name="text">
+    <string>批量导入</string>
+   </property>
+  </action>
+  <action name="CardShare">
+   <property name="text">
+    <string>名片共享</string>
+   </property>
+  </action>
+  <action name="CardcaseShare">
+   <property name="text">
+    <string>名片夹共享</string>
+   </property>
+  </action>
+  <action name="Export">
+   <property name="text">
+    <string>导出</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../../../qrc/test.qrc"/>
+ </resources>
+ <connections/>
+</ui>
